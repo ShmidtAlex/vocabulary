@@ -1,0 +1,1 @@
+/*component for training phrases, availiable from Trainings.js menu*/

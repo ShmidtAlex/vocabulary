@@ -1,0 +1,2 @@
+/*it nested in Vocabular.js means right pannel with reccomendations and
+personal statistics of user and also picture of medal*/

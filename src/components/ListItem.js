@@ -1,0 +1,1 @@
+/*one word in list of words in vocabulary set*/

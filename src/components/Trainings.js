@@ -1,0 +1,1 @@
+/*navbar component from where we can go to vacabulary trainings*/

@@ -1,0 +1,181 @@
+@icon-size: 25px;
+@container-h: 320px;
+@leaf-but-size: 60px;
+.leftLeafButton {
+  height: @container-h;
+  width: @leaf-but-size;  
+}
+.container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  height: @container-h;
+  width: 600px;
+  background-color:lightgray;
+  .general {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightblue;
+    border-radius: 3px;
+    height: 65%;
+    width: 100%; 
+    .forPicture{
+      display: flex;
+      background-color: gray;
+      flex-direction: column;
+      height: 200px;
+      width: 200px;      
+      img {
+        background-color: lightgray;
+        height: 85%;
+        width:inherit;
+      }
+      .icons {
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 25%;
+        background-color: lightgray;
+        .progress {
+          background-color: whitesmoke;
+          height: @icon-size;
+          width: @icon-size;
+        }
+        .complaint {
+          background-color: whitesmoke;
+          height: @icon-size;
+          width: @icon-size;
+        }
+        .downloadOwnImage {
+          background-color: whitesmoke;
+          height: @icon-size;
+          width: @icon-size;
+        }
+        .trash {
+          background-color: whitesmoke;
+          height: @icon-size;
+          width: @icon-size;
+        }
+      }
+
+    }
+    .forWord{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: lightgray;
+      height: 200px;
+      width: 350px;
+      .main {
+        background-color: whitesmoke;
+        height: @icon-size;
+        width:100%;
+      }
+      .transcription {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: whitesmoke;
+        height: @icon-size;
+        width:100%;
+        .sound {
+          margin:0 5px;
+          background-color: gray;
+          height: @icon-size;
+          width: 25%;
+        }
+        .text {
+          margin:0 5px;
+          background-color: gray;
+          height: @icon-size;
+          width: 75%;
+        }
+      }
+      .forTranslate{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: gray;
+        height: 100px;
+        width: 100%;
+        .text {
+          background-color: whitesmoke;
+          height: @icon-size;
+          width:100%;
+        }
+        .addTranslate {
+          background-color: whitesmoke;
+          height: @icon-size;
+          width:100%;
+        }
+      }    
+    }
+    
+  } 
+  .forPhrase{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    background-color: gray;
+    height: 20%;
+    width: 100%;
+    .sound {
+      background-color: whitesmoke;
+      width: 5%;
+      height: @icon-size;
+    }
+    .text {
+      background-color: whitesmoke;
+      width: 85%;
+      height: @icon-size;
+    }
+    .reload {
+      background-color: whitesmoke;
+      width: 5%;
+      height: @icon-size;
+    }
+  }
+  .synonyms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: gray;
+    height: @icon-size;
+    width: 100%;
+    .title {
+      width: 20%;
+    }
+    .eachOneSyn {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color:lightgray;
+      width: 70%;
+      .sound {
+        background-color: whitesmoke;
+        width: 5%;
+        height: @icon-size;
+      }
+      .text {
+        background-color: whitesmoke;
+        width: 85%;
+        height: @icon-size;
+      }
+    }
+    
+  }
+}
+.rightLeafButton {
+  height: @container-h;
+  width: @leaf-but-size;
+}
+html,body {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  height: 100%;
+}

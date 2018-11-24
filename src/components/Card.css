@@ -1,0 +1,176 @@
+.leftLeafButton {
+  height: 320px;
+  width: 60px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 320px;
+  width: 600px;
+  background-color: lightgray;
+}
+.container .general {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightblue;
+  border-radius: 3px;
+  height: 65%;
+  width: 100%;
+}
+.container .general .forPicture {
+  display: flex;
+  background-color: gray;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+}
+.container .general .forPicture img {
+  background-color: lightgray;
+  height: 85%;
+  width: inherit;
+}
+.container .general .forPicture .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 25%;
+  background-color: lightgray;
+}
+.container .general .forPicture .icons .progress {
+  background-color: whitesmoke;
+  height: 25px;
+  width: 25px;
+}
+.container .general .forPicture .icons .complaint {
+  background-color: whitesmoke;
+  height: 25px;
+  width: 25px;
+}
+.container .general .forPicture .icons .downloadOwnImage {
+  background-color: whitesmoke;
+  height: 25px;
+  width: 25px;
+}
+.container .general .forPicture .icons .trash {
+  background-color: whitesmoke;
+  height: 25px;
+  width: 25px;
+}
+.container .general .forWord {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: lightgray;
+  height: 200px;
+  width: 350px;
+}
+.container .general .forWord .main {
+  background-color: whitesmoke;
+  height: 25px;
+  width: 100%;
+}
+.container .general .forWord .transcription {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: whitesmoke;
+  height: 25px;
+  width: 100%;
+}
+.container .general .forWord .transcription .sound {
+  margin: 0 5px;
+  background-color: gray;
+  height: 25px;
+  width: 25%;
+}
+.container .general .forWord .transcription .text {
+  margin: 0 5px;
+  background-color: gray;
+  height: 25px;
+  width: 75%;
+}
+.container .general .forWord .forTranslate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: gray;
+  height: 100px;
+  width: 100%;
+}
+.container .general .forWord .forTranslate .text {
+  background-color: whitesmoke;
+  height: 25px;
+  width: 100%;
+}
+.container .general .forWord .forTranslate .addTranslate {
+  background-color: whitesmoke;
+  height: 25px;
+  width: 100%;
+}
+.container .forPhrase {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+  background-color: gray;
+  height: 20%;
+  width: 100%;
+}
+.container .forPhrase .sound {
+  background-color: whitesmoke;
+  width: 5%;
+  height: 25px;
+}
+.container .forPhrase .text {
+  background-color: whitesmoke;
+  width: 85%;
+  height: 25px;
+}
+.container .forPhrase .reload {
+  background-color: whitesmoke;
+  width: 5%;
+  height: 25px;
+}
+.container .synonyms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: gray;
+  height: 25px;
+  width: 100%;
+}
+.container .synonyms .title {
+  width: 20%;
+}
+.container .synonyms .eachOneSyn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: lightgray;
+  width: 70%;
+}
+.container .synonyms .eachOneSyn .sound {
+  background-color: whitesmoke;
+  width: 5%;
+  height: 25px;
+}
+.container .synonyms .eachOneSyn .text {
+  background-color: whitesmoke;
+  width: 85%;
+  height: 25px;
+}
+.rightLeafButton {
+  height: 320px;
+  width: 60px;
+}
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  height: 100%;
+}
