@@ -1,5 +1,5 @@
-@icon-size: 25px;
-@container-h: 320px;
+@icon-size: 30px;
+@container-h: 420px;
 @leaf-but-size: 60px;
 .leftLeafButton {
   height: @container-h;
@@ -38,22 +38,18 @@
         height: 25%;
         background-color: lightgray;
         .progress {
-          background-color: whitesmoke;
           height: @icon-size;
           width: @icon-size;
         }
-        .complaint {
-          background-color: whitesmoke;
+        .complaint {/*
           height: @icon-size;
-          width: @icon-size;
+          width: @icon-size;*/
         }
         .downloadOwnImage {
-          background-color: whitesmoke;
           height: @icon-size;
           width: @icon-size;
         }
         .trash {
-          background-color: whitesmoke;
           height: @icon-size;
           width: @icon-size;
         }
@@ -64,7 +60,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      background-color: lightgray;
       height: 200px;
       width: 350px;
       .main {
@@ -77,17 +72,15 @@
         flex-direction: row;
         justify-content: flex-start;
         background-color: whitesmoke;
-        height: @icon-size;
+        height: 25px;
         width:100%;
         .sound {
           margin:0 5px;
-          background-color: gray;
           height: @icon-size;
           width: 25%;
         }
         .text {
           margin:0 5px;
-          background-color: gray;
           height: @icon-size;
           width: 75%;
         }
@@ -96,7 +89,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        background-color: gray;
+        border: 1px dotted gray;
         height: 100px;
         width: 100%;
         .text {

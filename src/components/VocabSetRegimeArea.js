@@ -1,1 +1,0 @@
-/*for opting display regime for set of words*/

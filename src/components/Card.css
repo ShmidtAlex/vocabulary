@@ -1,12 +1,12 @@
 .leftLeafButton {
-  height: 320px;
+  height: 420px;
   width: 60px;
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 320px;
+  height: 420px;
   width: 600px;
   background-color: lightgray;
 }
@@ -39,36 +39,32 @@
   background-color: lightgray;
 }
 .container .general .forPicture .icons .progress {
-  background-color: whitesmoke;
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
 }
 .container .general .forPicture .icons .complaint {
-  background-color: whitesmoke;
-  height: 25px;
-  width: 25px;
+  /*
+          height: @icon-size;
+          width: @icon-size;*/
 }
 .container .general .forPicture .icons .downloadOwnImage {
-  background-color: whitesmoke;
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
 }
 .container .general .forPicture .icons .trash {
-  background-color: whitesmoke;
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
 }
 .container .general .forWord {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: lightgray;
   height: 200px;
   width: 350px;
 }
 .container .general .forWord .main {
   background-color: whitesmoke;
-  height: 25px;
+  height: 30px;
   width: 100%;
 }
 .container .general .forWord .transcription {
@@ -81,32 +77,30 @@
 }
 .container .general .forWord .transcription .sound {
   margin: 0 5px;
-  background-color: gray;
-  height: 25px;
+  height: 30px;
   width: 25%;
 }
 .container .general .forWord .transcription .text {
   margin: 0 5px;
-  background-color: gray;
-  height: 25px;
+  height: 30px;
   width: 75%;
 }
 .container .general .forWord .forTranslate {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: gray;
+  border: 1px dotted gray;
   height: 100px;
   width: 100%;
 }
 .container .general .forWord .forTranslate .text {
   background-color: whitesmoke;
-  height: 25px;
+  height: 30px;
   width: 100%;
 }
 .container .general .forWord .forTranslate .addTranslate {
   background-color: whitesmoke;
-  height: 25px;
+  height: 30px;
   width: 100%;
 }
 .container .forPhrase {
@@ -122,24 +116,24 @@
 .container .forPhrase .sound {
   background-color: whitesmoke;
   width: 5%;
-  height: 25px;
+  height: 30px;
 }
 .container .forPhrase .text {
   background-color: whitesmoke;
   width: 85%;
-  height: 25px;
+  height: 30px;
 }
 .container .forPhrase .reload {
   background-color: whitesmoke;
   width: 5%;
-  height: 25px;
+  height: 30px;
 }
 .container .synonyms {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   background-color: gray;
-  height: 25px;
+  height: 30px;
   width: 100%;
 }
 .container .synonyms .title {
@@ -155,15 +149,15 @@
 .container .synonyms .eachOneSyn .sound {
   background-color: whitesmoke;
   width: 5%;
-  height: 25px;
+  height: 30px;
 }
 .container .synonyms .eachOneSyn .text {
   background-color: whitesmoke;
   width: 85%;
-  height: 25px;
+  height: 30px;
 }
 .rightLeafButton {
-  height: 320px;
+  height: 420px;
   width: 60px;
 }
 html,

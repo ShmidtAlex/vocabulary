@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import Flexbox from 'flexbox-react';
 import './Card.css';
+
+import SoundButton from './SoundButton';
+import ProgressIcon from './ProgressIcon';
+import ComplaintIcon from './ComplaintIcon';
+import DeleteIcon from './DeleteIcon';
+import DownloadIcon from './DownloadIcon';
+import { word } from '../word.js';
+
 class Card extends Component {
   render() {
     return (  
@@ -9,22 +17,31 @@ class Card extends Component {
         <div className="container">
           <div className="general">
             <div className="forPicture">              
-              <img alt="place for pic" />{/*reusable with different sizes (states)*/}
+              <img src={word[0].pict} alt="place for pic" />{/*reusable with different sizes (states)*/}
               <div className="icons">
-                <div className="progress"></div>{/*resuable with different states*/}
-                <div className="complaint"></div>{/*resuable without states*/}
-                <div className="downloadOwnImage"></div>{/*resuable without states*/}
-                <div className="trash"></div>{/*resuable with different states*/}
+                <div className="progress">
+                  <ProgressIcon />
+                </div>
+                <div className="complaint">
+                  <ComplaintIcon />
+                </div>{/*resuable without states*/}
+                <div className="downloadOwnImage">
+                  <DownloadIcon />
+                </div>{/*resuable without states*/}
+                <div className="trash">
+                  <DeleteIcon />
+                </div>{/*resuable with different states*/}
               </div>
             </div>
             <div className="forWord">
-              <div className="main">word itself</div>{/*resuable without states*/}
+              <div className="main">{ word[0].english }</div>
               <div className="transcription">
-                <div className="sound">sound button</div>{/*resuable without states*/}
-                <p className="text">transcription in letters</p>{/*resuable without states*/}
+              <SoundButton />
+               {/* <div className="sound">sound button</div>{/*resuable without states} */}
+                <p className="text">{ word[0].transcription }</p>{/*resuable without states*/}
               </div>
               <div className="forTranslate">
-                <div className="text">translation</div>{/*resuable without states*/}
+                <div className="text">{ word[0].translate }</div>{/*resuable without states*/}
                 <div className="addTranslate">button for adding other translation</div>{/*resuable with different states*/}
               </div>                  
             </div>
@@ -32,14 +49,14 @@ class Card extends Component {
           
           </div>
           <div className="forPhrase">
-            <div className="sound">sound</div>
-            <div className="text">phrase with exploring word</div>
+             <SoundButton />
+            <div className="text"><i>{word[0].example}</i></div>
             <div className="reload">next phrase</div>
           </div>
           <div className="synonyms">
             <div className="title">synonyms:</div>
             <div className="eachOneSyn">
-              <div className="sound">sound</div>
+              <SoundButton />
               {/*eslint-disable-next-line*/ /*needs to be changed by styled button*/}
               <div className="text"><a href="#">synonym itself</a></div>
             </div>
